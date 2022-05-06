@@ -1,5 +1,6 @@
+import { Answer } from './Answers';
 function App() {
-  return <div>App</div>
+  return <Answer />
 }
 
 export default App;
