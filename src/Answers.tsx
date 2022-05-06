@@ -52,3 +52,9 @@ interface IdLabel {
 function createLabel2<T extends number | string>(value: T): NameOrId<T> {
   throw 'unimplemented'
 }
+
+/* Inferring types */
+/* There is an array of strings. Write generic-type with name 'Flatten' which infer type of array values */
+type A = Array<string>
+
+type Flatten<A> = A extends Array<infer T> ? T : never

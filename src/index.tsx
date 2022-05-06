@@ -23,7 +23,7 @@ type User = {
 
 /* Overloads */
 
-/* Make a function createLabel which depends on argument type, return value certain type
+/* Make a function createLabel which depends on argument type return certain value type.
 if arguments type is number - return IdLabel, string - return NameLabel*/
 
 interface IdLabel {
@@ -34,3 +34,7 @@ interface NameLabel {
 }
 
 /* Make the same using conditional types */
+
+/* Inferring types */
+/* There is an array of strings. Write generic-type with name 'Flatten' which infer type of array values */
+type A = Array<string>
